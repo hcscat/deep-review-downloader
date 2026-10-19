@@ -1,0 +1,30 @@
+# Dependencies and generated build / browser artifacts.
+node_modules/
+dist/
+output/
+.playwright-cli/
+.playwright/extension.config.json
+__pycache__/
+*.py[cod]
+.venv/
+
+# User documents and local-only inputs must never enter the public source tree.
+private/
+local/
+snapshots/
+deep review*/
+Deep Review.html
+review-*.md
+review-*.json
+
+# Credentials and private signing material.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+.DS_Store
+Thumbs.db

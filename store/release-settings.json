@@ -1,0 +1,22 @@
+{
+  "version": "1.0.2",
+  "name": "Deep Review HTML Exporter",
+  "defaultListingLanguage": "en",
+  "suggestedCategory": "Productivity",
+  "publisherName": "hcscat",
+  "publicContactEmail": "hcs88cp@gmail.com",
+  "privacyPolicyUrl": "https://github.com/hcscat/deep-review-downloader/blob/main/docs/privacy.md",
+  "reviewerAccessibleDocumentUrl": null,
+  "remoteCode": false,
+  "dataHandling": {
+    "websiteContent": true,
+    "webHistory": "Only selected document URL, title and export time",
+    "personallyIdentifiableInformation": "May occur inside the user-selected document content",
+    "developerServerTransfer": false,
+    "analyticsOrAdvertising": false
+  },
+  "publicationStatus": "Source publication is handled through Git; extension releases are published manually",
+  "privacyPolicyPublicationStatus": "Privacy documentation is kept in GitHub source; Pages is not required",
+  "distributionChannel": "GitHub Releases only",
+  "webStoreStatus": "On hold by publisher decision"
+}

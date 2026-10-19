@@ -1,0 +1,184 @@
+/* Offline interaction and accessibility rules shared by both build paths. */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+deepreview-review-viewer {
+  --main-header-height: 0px !important;
+}
+.review-viewer-header-title {
+  margin-left: 0 !important;
+}
+[hidden] {
+  display: none !important;
+}
+button,
+select {
+  font-family: inherit;
+}
+#viewer-language {
+  width: 92px;
+  min-height: 32px;
+  padding: 4px;
+  font-size: 12px;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+svg.mat-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  font-family: inherit;
+  fill: none;
+}
+.offline-comments-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+#severity-filter {
+  appearance: auto;
+  background: #fff;
+  color: #202124;
+  border: 1px solid #bdc1c6;
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 32px;
+  font-size: 12px;
+}
+#severity-filter {
+  width: 112px;
+  cursor: pointer;
+}
+.pdf-bbox-highlight {
+  touch-action: manipulation;
+}
+.pdf-bbox-highlight:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+.margin-comment-card:focus-visible,
+.offline-report-section:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+.offline-report-view {
+  background: #fff;
+  color: #1f2937;
+  padding: 4px 10px 24px;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.offline-report-view h2 {
+  color: #0f172a;
+  font-size: 19px;
+  margin: 12px 0 18px;
+}
+.offline-report-summary {
+  margin-bottom: 30px;
+}
+.offline-report-summary h4 {
+  color: #0f172a;
+  font-size: 14px;
+  margin: 16px 0 6px;
+}
+.offline-report-section {
+  border-top: 1px solid #e2e8f0;
+  padding: 20px 0;
+  scroll-margin-top: 20px;
+  cursor: pointer;
+}
+.offline-report-section.selected {
+  background: #f8fafd;
+  box-shadow:
+    -8px 0 0 #f8fafd,
+    8px 0 0 #f8fafd;
+}
+.offline-report-section .comment-summary {
+  font-size: 15px;
+  line-height: 1.45;
+}
+.offline-report-section .comment-location-footer {
+  display: block;
+  margin-top: 12px;
+}
+.feedback-stream-pane.report-mode {
+  padding-top: 14px;
+}
+#restore-dismissed {
+  align-self: flex-end;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  background: #fff;
+  color: #174ea6;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+.pdf-zoom-controls {
+  flex-shrink: 0;
+}
+.pdf-manuscript-viewport {
+  overscroll-behavior: contain;
+  overflow-anchor: none;
+}
+.feedback-stream-pane {
+  overscroll-behavior: contain;
+  overflow-anchor: none;
+}
+.suggested-fix-inline {
+  white-space: normal;
+}
+@media (max-width: 1050px) {
+  .review-viewer-header-container {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .review-viewer-header {
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 720px) {
+  deepreview-review-viewer {
+    --header-height: 90px !important;
+  }
+  .review-viewer-header-container {
+    justify-content: flex-start;
+  }
+  .review-viewer-header-title {
+    max-width: 155px;
+  }
+  .review-viewer-header-fill {
+    display: none !important;
+  }
+  .figma-split-workspace {
+    gap: 8px !important;
+    padding: 0 6px !important;
+  }
+  .figma-manuscript-column {
+    min-width: 160px !important;
+    flex-basis: 48% !important;
+  }
+  .feedback-stream-pane {
+    min-width: 170px !important;
+    flex: 1 1 50% !important;
+    max-width: none !important;
+    padding: 12px 6px 24px !important;
+  }
+  .figma-feedback-card {
+    padding: 14px 12px !important;
+  }
+  .offline-report-view {
+    padding: 0 2px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}

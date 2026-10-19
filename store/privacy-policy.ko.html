@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta
+      content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
+      http-equiv="Content-Security-Policy"
+    />
+    <title>Deep Review HTML Exporter 개인정보처리방침</title>
+    <style>
+      :root {
+        font-family: system-ui, sans-serif;
+        color: #18314e;
+        background: #f6f8fc;
+        line-height: 1.8;
+      }
+      body {
+        margin: 0;
+        padding: 40px 20px;
+      }
+      main {
+        max-width: 820px;
+        margin: auto;
+        padding: 36px;
+        background: #fff;
+        border: 1px solid #dbe3ef;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 1.4;
+      }
+      h2 {
+        font-size: 19px;
+        margin-top: 30px;
+      }
+      p,
+      li {
+        overflow-wrap: anywhere;
+      }
+      .draft {
+        padding: 14px 18px;
+        background: #fff4d6;
+        border-radius: 8px;
+      }
+      .date {
+        color: #566b83;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Deep Review HTML Exporter 개인정보처리방침</h1>
+      <p class="date">
+        대상 버전: 1.0.2 · 작성 기준일: 2026년 10월 19일 · 시행일: 실제 게시 시
+        지정
+      </p>
+      <p>
+        이 방침은 hcscat이 제공하는 Deep Review HTML Exporter 확장 프로그램의
+        데이터 처리에 적용됩니다. 이 도구는 사용자가 열어 둔 Deep Review 리뷰를
+        오프라인 단일 HTML로 저장하는 독립 개발 도구입니다.
+      </p>
+      <h2>1. 처리하는 정보와 목적</h2>
+      <p>
+        사용자가 확장 버튼을 누르면 선택한 문서의 페이지 이미지, 전체 피드백,
+        코멘트 제목·본문·심각도·페이지 표기, 하이라이트 좌표와 연결 식별자를
+        처리합니다. 문서 제목·URL·문서 및 리뷰 식별자, 제공되는 버전 정보와
+        내보내기 시각도 출처 확인을 위해 HTML에 포함합니다. 이 정보는 사용자가
+        요청한 내보내기와 오프라인 탐색 기능을 제공하는 데 사용합니다.
+      </p>
+      <p>
+        선택한 원문에 저자 이름·이메일 등 개인정보가 있으면 문서 이미지나 리뷰
+        본문의 일부로 저장될 수 있습니다. 확장은 이를 별도의 프로필로 추출하거나
+        광고·분석에 사용하지 않습니다.
+      </p>
+      <h2>2. 로컬 처리와 외부 전송</h2>
+      <p>
+        수집과 HTML 생성은 사용자의 브라우저 안에서 수행합니다. 확장은 처리한
+        리뷰 데이터를 개발자 또는 제3자 서버로 업로드하지 않습니다. 원본
+        사이트가 문서와 이미지를 표시하기 위해 수행하는 통신에는 해당 사이트의
+        정책이 적용됩니다. 사용자가 내보낸 파일을 직접 공유하거나 보존된 참조
+        링크를 여는 행위도 별개입니다.
+      </p>
+      <h2>3. 읽지 않는 정보</h2>
+      <p>
+        Google 비밀번호, 인증 쿠키·토큰, 브라우저의 전체 방문 기록, 원본
+        사이트의 웹 저장소를 조회하지 않습니다. 계정 프로필이나 연락처를 별도
+        수집하지 않습니다. 웹페이지의 이벤트·스크립트와 임의의 숨은 속성은
+        제거하고, 서식·수식에 필요한 속성만 허용합니다. 문서 출처 URL은 문서
+        식별에 필요한 값만 보존합니다. 본문 참조 URL은
+        사용자명·비밀번호·쿼리·프래그먼트를 제거하므로 쿼리 기반 링크는 동작이
+        달라질 수 있습니다. URL 경로와 논문·리뷰 본문에 들어 있는 개인정보를
+        자동으로 익명화하지는 않습니다.
+      </p>
+      <h2>4. 권한 사용</h2>
+      <p>
+        <strong>activeTab</strong>은 버튼을 누른 탭에 일시적으로 접근하고,
+        <strong>scripting</strong>은 패키지에 포함된 수집기를 실행하며,
+        <strong>downloads</strong>는 생성한 파일을 저장하고 해당 다운로드의
+        상태·위치를 확인하는 데 사용합니다. 모든 사이트의 상시 호스트 권한은
+        요청하지 않습니다.
+      </p>
+      <h2>5. 보존과 삭제</h2>
+      <p>
+        작업 데이터는 수집·생성 중 브라우저 메모리에서 사용하며, 다운로드용 임시
+        Blob은 완료 또는 중단 확인 후 해제합니다. 작업 탭을 닫으면 그 문서의
+        메모리도 종료됩니다. 다운로드한 HTML과 Chrome 다운로드 항목은 사용자가
+        직접 삭제할 때까지 남을 수 있습니다. 확장 제거만으로 다운로드 파일이
+        삭제되지는 않습니다. 뷰어의 선택·확대·숨김 상태는 해당 열람 세션에서만
+        유지합니다.
+      </p>
+      <h2>6. 제3자 제공과 제한적 이용</h2>
+      <p>
+        개발자는 확장이 처리한 리뷰 데이터를 전송받거나 제3자에게 판매·제공하지
+        않습니다. 광고, 신용도 평가 또는 대출 판단에 사용하지 않습니다. 사용자
+        데이터 이용은 Chrome Web Store 사용자 데이터 정책의 Limited Use
+        요구사항을 준수하며 명시된 내보내기 기능에 한정합니다.
+      </p>
+      <h2>7. 문의와 변경</h2>
+      <p>게시자: hcscat<br />문의 이메일: hcs88cp@gmail.com</p>
+      <p>
+        문의 과정에서 사용자가 자발적으로 제공하는 정보는 문의 해결을 위해
+        처리할 수 있습니다. 리뷰 자료를 첨부하기 전 공개 범위를 확인하세요. 처리
+        방식이 변경되면 이 방침의 적용 버전과 시행일을 갱신합니다.
+      </p>
+    </main>
+  </body>
+</html>

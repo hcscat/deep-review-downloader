@@ -1,0 +1,22 @@
+{
+  "name": "deep-review-offline-exporter",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "node scripts/build-extension.mjs",
+    "release:prepare": "npm run typecheck && npm run format:check && npm run build && python scripts/prepare_release.py",
+    "format": "prettier --write \"extension/**/*.{ts,html,css,json}\" \"viewer/*.{js,css}\" \"scripts/*.{js,mjs}\" \"store/*.html\" \"docs/*.html\" \"package*.json\" \"tsconfig.json\"",
+    "format:check": "prettier --check \"extension/**/*.{ts,html,css,json}\" \"viewer/*.{js,css}\" \"scripts/*.{js,mjs}\" \"store/*.html\" \"docs/*.html\" \"package*.json\" \"tsconfig.json\"",
+    "audit:source": "python scripts/audit_public_source.py",
+    "prepare:test": "python scripts/prepare_extension_test.py",
+    "sync:privacy": "python scripts/sync_privacy_page.py"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.3.5",
+    "esbuild": "0.28.2",
+    "prettier": "3.6.2",
+    "typescript": "7.0.2"
+  }
+}

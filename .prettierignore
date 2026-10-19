@@ -1,0 +1,7 @@
+node_modules/
+dist/
+output/
+.git/
+viewer/assets/
+.playwright/extension.config.json
+store/assets/*.png

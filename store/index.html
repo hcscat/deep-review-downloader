@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'"
+    />
+    <title>Deep Review HTML Exporter · 스토어 자료</title>
+    <style>
+      :root {
+        font-family: system-ui, sans-serif;
+        color: #16314f;
+        background: #f4f7fc;
+        line-height: 1.7;
+      }
+      body {
+        margin: 0;
+        padding: 40px 24px;
+      }
+      main {
+        max-width: 1180px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 32px;
+        line-height: 1.25;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 34px 0 16px;
+      }
+      .intro {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .intro img {
+        width: 80px;
+        height: 80px;
+      }
+      .status {
+        padding: 14px 18px;
+        background: #fff0ce;
+        border-radius: 10px;
+      }
+      a {
+        color: #1659ba;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+      figure {
+        margin: 0;
+        padding: 12px;
+        background: white;
+        border: 1px solid #dce4f0;
+        border-radius: 12px;
+      }
+      figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      figcaption {
+        padding: 10px 4px 0;
+        font-size: 14px;
+      }
+      .promo {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+      }
+      .promo figure:first-child {
+        max-width: 440px;
+      }
+      .files {
+        padding: 24px;
+        background: white;
+        border-radius: 12px;
+      }
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .promo {
+          display: block;
+        }
+        .promo figure {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="intro">
+        <img src="assets/icon-128.png" alt="확장 아이콘" />
+        <div>
+          <h1>Deep Review HTML Exporter</h1>
+          <p>Chrome Web Store 등록 자료 · 1.0.1</p>
+        </div>
+      </div>
+      <p class="status">
+        로컬 준비 완료용 자료입니다. 게시자·공개 문의 이메일·정책 URL·심사용
+        샘플 URL을 채운 뒤 검수하세요. 실제 업로드나 심사 제출은 하지
+        않았습니다.
+      </p>
+      <p>
+        아래 화면은 실제 확장에서 내보낸 가상 문서를 촬영했습니다. 실제
+        논문·저자·계정·리뷰 데이터는 사용하지 않았습니다.
+      </p>
+      <h2>스토어 스크린샷 · 1280×800</h2>
+      <div class="grid">
+        <figure>
+          <img
+            src="assets/screenshot-01-overview.png"
+            alt="가상 문서와 전체 피드백"
+          />
+          <figcaption>01 · 문서와 전체 피드백</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="assets/screenshot-02-linked-feedback.png"
+            alt="연결된 하이라이트와 코멘트"
+          />
+          <figcaption>02 · 하이라이트와 코멘트 양방향 연결</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshot-03-report.png" alt="전체 보고서 보기" />
+          <figcaption>03 · Report 보기</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshot-04-zoom.png" alt="확대된 논문 이미지" />
+          <figcaption>04 · 논문 확대와 코멘트</figcaption>
+        </figure>
+      </div>
+      <h2>홍보 이미지</h2>
+      <div class="promo">
+        <figure>
+          <img src="assets/promo-small.png" alt="작은 홍보 이미지" />
+          <figcaption>필수 · 440×280</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/promo-marquee.png" alt="큰 홍보 이미지" />
+          <figcaption>선택 · 1400×560</figcaption>
+        </figure>
+      </div>
+      <h2>등록 문안과 정책</h2>
+      <div class="files">
+        <p>
+          <a href="listing.ko.txt">한국어 소개문</a> ·
+          <a href="listing.en.txt">English listing</a> ·
+          <a href="permissions.ko.txt">권한·데이터 처리 설명</a>
+        </p>
+        <p>
+          <a href="privacy-policy.ko.html">개인정보처리방침 준비본</a> ·
+          <a href="reviewer-instructions.en.txt">심사용 테스트 방법</a> ·
+          <a href="release-settings.json">게시 전 입력 항목</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

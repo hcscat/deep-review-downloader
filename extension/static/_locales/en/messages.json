@@ -1,0 +1,188 @@
+{
+  "extName": {
+    "message": "Deep Review HTML Exporter"
+  },
+  "extDescription": {
+    "message": "Save the open Deep Review as one interactive offline HTML file."
+  },
+  "actionTitle": {
+    "message": "Save Deep Review as HTML"
+  },
+  "startOnReview": {
+    "message": "Click the extension button in a tab displaying a Deep Review."
+  },
+  "sourceMoved": {
+    "message": "The original Deep Review tab closed or navigated to another page."
+  },
+  "alreadyRunning": {
+    "message": "An export is already running in this tab."
+  },
+  "tooLarge": {
+    "message": "The document exceeds the export limit of 160 Mi characters."
+  },
+  "cancelled": {
+    "message": "Canceled."
+  },
+  "transferTimeout": {
+    "message": "Review data transfer timed out."
+  },
+  "loadingTimeout": {
+    "message": "Could not confirm loading. Wait for the review to finish displaying and try again."
+  },
+  "filterMissing": {
+    "message": "The comment filter option was not found."
+  },
+  "canvasFailed": {
+    "message": "Could not start converting a page image."
+  },
+  "imageRestricted": {
+    "message": "Browser image-access restrictions prevent export. Use a local Chrome save instead."
+  },
+  "reviewOnly": {
+    "message": "Run this from a Google Deep Review document page."
+  },
+  "reviewMissing": {
+    "message": "Review UI not found. Sign in and wait for the review to display."
+  },
+  "documentLoading": {
+    "message": "The address and displayed review do not match yet. Wait for loading and try again."
+  },
+  "checkingComments": {
+    "message": "Checking comments and linked regions in Comments view."
+  },
+  "capturingPages": {
+    "message": "Capturing images and highlights: $1 pages."
+  },
+  "incompleteDocument": {
+    "message": "Could not reach the end. The document is too large or this UI is unsupported."
+  },
+  "identityChanged": {
+    "message": "Document or review version changed during capture. Retry from the current review."
+  },
+  "captureDiagnostic": {
+    "message": "The source provides no total comment count. Captured bodies, links and page continuity were checked. Comments dismissed before export may be absent."
+  },
+  "missingPages": {
+    "message": "Captured $2 of $1 source pages."
+  },
+  "invalidSnapshot": {
+    "message": "Supported Deep Review data was not found. Retry from the displayed review."
+  },
+  "emptySnapshot": {
+    "message": "Paper pages or detailed comments are empty. Check that the review has loaded."
+  },
+  "duplicateIds": {
+    "message": "Comment IDs are empty or duplicated."
+  },
+  "pageOrder": {
+    "message": "Page images are missing or their sequence is invalid."
+  },
+  "brokenLink": {
+    "message": "A highlight/comment link is broken. Check All Types."
+  },
+  "invalidCoordinates": {
+    "message": "Unsupported highlight coordinates."
+  },
+  "unanchoredComment": {
+    "message": "A comment has no linked region. Wait for page loading and retry."
+  },
+  "invalidComment": {
+    "message": "Could not read a comment body or severity."
+  },
+  "failedHeading": {
+    "message": "Could not save the review"
+  },
+  "jobTimeout": {
+    "message": "Response timed out. Check the original tab and try again."
+  },
+  "cancelStatus": {
+    "message": "The export was canceled."
+  },
+  "cancelHeading": {
+    "message": "Export canceled"
+  },
+  "buildingViewer": {
+    "message": "Building the offline viewer."
+  },
+  "resourceFailed": {
+    "message": "Could not read the packaged extension file: $1"
+  },
+  "documentLabel": {
+    "message": "Document"
+  },
+  "capturedLabel": {
+    "message": "Captured"
+  },
+  "capturedCounts": {
+    "message": "$1 pages · $2 comments · $3 highlights"
+  },
+  "downloadInterrupted": {
+    "message": "Download interrupted: $1"
+  },
+  "checkDownloads": {
+    "message": "Check Chrome Downloads."
+  },
+  "savedHeading": {
+    "message": "HTML file saved"
+  },
+  "savedStatus": {
+    "message": "Open the saved HTML without an internet connection or login."
+  },
+  "downloading": {
+    "message": "Downloading the HTML file."
+  },
+  "startFromTab": {
+    "message": "Start by clicking the extension button in a Deep Review tab."
+  },
+  "permissionMissing": {
+    "message": "No permission to read this tab. Click the extension button in the original review tab again."
+  },
+  "sourceDisconnected": {
+    "message": "The source tab disconnected. Open the original review and try again."
+  },
+  "invalidTransfer": {
+    "message": "Invalid transfer manifest."
+  },
+  "chunkOrder": {
+    "message": "Review data arrived out of order."
+  },
+  "transferring": {
+    "message": "Transferring review data ($1/$2)."
+  },
+  "missingChunks": {
+    "message": "Some review data did not arrive."
+  },
+  "integrityFailed": {
+    "message": "Review data integrity check failed."
+  },
+  "cancelPending": {
+    "message": "Download cancellation is still pending."
+  },
+  "cancelCleanupFailed": {
+    "message": "Cancellation could not remove the file. Check Chrome Downloads: $1"
+  },
+  "pageTitle": {
+    "message": "Deep Review HTML Export"
+  },
+  "savingHeading": {
+    "message": "Saving the review"
+  },
+  "checkingReview": {
+    "message": "Checking the open review."
+  },
+  "progressLabel": {
+    "message": "Export progress"
+  },
+  "showFile": {
+    "message": "Show in folder"
+  },
+  "cancelButton": {
+    "message": "Cancel"
+  },
+  "closeTab": {
+    "message": "Close this tab"
+  },
+  "localHint": {
+    "message": "You may close this tab when finished. Document content can contain personal data. No automatic anonymization or encryption is applied."
+  }
+}

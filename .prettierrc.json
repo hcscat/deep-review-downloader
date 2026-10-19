@@ -1,0 +1,11 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "scripts/verify_*.js",
+        "scripts/capture_*.js"
+      ],
+      "options": { "semi": false }
+    }
+  ]
+}

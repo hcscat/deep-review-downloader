@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111c36"/><stop offset="1" stop-color="#193c68"/></linearGradient></defs>
+<rect width="440" height="280" fill="url(#bg)"/>
+<circle cx="430" cy="30" r="150" fill="#3079df" opacity=".1"/>
+<rect x="26" y="25" width="28" height="28" rx="7" fill="#4285f4"/>
+<path d="M40 31v12m-5-5 5 5 5-5m-13 7v3h16v-3" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="65" y="37" fill="#dce9ff" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">DEEP REVIEW</text>
+<text x="65" y="52" fill="#9fb8dc" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.2">HTML EXPORTER</text>
+<text x="26" y="108" fill="white" font-family="Arial,sans-serif" font-size="29" font-weight="700">Keep the review.</text>
+<text x="26" y="147" fill="#96c4ff" font-family="Arial,sans-serif" font-size="29" font-weight="700">Take it offline.</text>
+<rect x="294" y="173" width="119" height="80" rx="9" fill="#f7faff"/>
+<rect x="306" y="184" width="45" height="58" rx="3" fill="white" stroke="#cad8ec"/>
+<path d="M314 195h28m-28 7h28m-28 7h28m-28 7h28m-28 7h20" stroke="#9cb1cb" stroke-width="2"/>
+<rect x="312" y="205" width="32" height="8" rx="1" fill="#f5ba4c" opacity=".6"/>
+<rect x="361" y="184" width="40" height="23" rx="4" fill="#dcebff"/>
+<path d="M367 191h27m-27 6h21" stroke="#5d8ac8" stroke-width="2"/>
+<rect x="361" y="214" width="40" height="28" rx="4" fill="#e9eef7"/>
+<path d="M367 222h27m-27 6h21m-21 6h24" stroke="#9cb1cb" stroke-width="2"/>
+<path d="M343 209h9v-13h8" fill="none" stroke="#1a73e8" stroke-width="2"/>
+<text x="26" y="216" fill="#d7e6ff" font-family="Arial,sans-serif" font-size="12">One HTML file.</text>
+<text x="26" y="239" fill="#94acd1" font-family="Arial,sans-serif" font-size="11">Linked highlights and comments.</text>
+</svg>

@@ -1,0 +1,24 @@
+Purpose
+Export the currently open Deep Review document into a self-contained offline HTML viewer.
+
+Test requirements
+The source website requires a Google account with access to a Deep Review document. The extension adds no account or subscription. Prepare a reviewer-accessible sample document before submission and replace [REVIEWER_ACCESSIBLE_DOCUMENT_URL] below. A private document URL alone does not grant access. Do not provide a personal Google password.
+
+Steps
+1. Open [REVIEWER_ACCESSIBLE_DOCUMENT_URL] and complete the original website's sign-in if required.
+2. Wait until the manuscript pages and review comments are visible.
+3. Click the extension toolbar button once. A background extension task tab opens.
+4. Wait for a checkmark badge and the task page's completed-download confirmation.
+5. Open the HTML in the DeepReview subfolder of the Chrome downloads directory.
+6. Disconnect networking and verify Read More/Less and Report/Comments switching.
+7. Click a page highlight and verify the matching comment is selected and scrolled into view. Click a comment to navigate back to its page region.
+8. Verify zoom, severity filtering, dismissal/restoration and Copy Report.
+
+Expected behavior
+The generated file embeds its resources and the viewer runtime. The original page mode, filter, scroll and focus are restored where possible. The extension reads neither authentication storage nor cookies/tokens and uploads no review data to developer servers.
+
+Known scope
+The manuscript is stored as page images. Comments previously removed from the source DOM cannot be recovered. Errors for unsupported pages, missing links, image restrictions or interrupted downloads are displayed in the task tab.
+
+Public source support
+The source includes generated fictional fixtures and an isolated automated capture/download/offline-viewer test. These fixtures are development aids, not alternate production permissions or a replacement for testing a live accessible source document.

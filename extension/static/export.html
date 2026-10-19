@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title data-i18n="pageTitle">Deep Review HTML Export</title>
+    <link rel="stylesheet" href="export.css" />
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">DEEP REVIEW · HTML EXPORTER</div>
+      <h1 id="heading" data-i18n="savingHeading">Saving the review</h1>
+      <p
+        id="status"
+        data-i18n="checkingReview"
+        role="status"
+        aria-live="polite"
+      >
+        Checking the open review.
+      </p>
+      <progress id="progress" aria-label="Export progress"></progress>
+      <dl id="details" hidden></dl>
+      <ul id="diagnostics" hidden></ul>
+      <p id="location" hidden></p>
+      <div class="actions">
+        <button id="show-file" data-i18n="showFile" hidden>
+          Show in folder</button
+        ><button id="cancel" data-i18n="cancelButton">Cancel</button
+        ><button id="close" data-i18n="closeTab" hidden>Close this tab</button>
+      </div>
+      <p class="hint" data-i18n="localHint">
+        You may close this tab when finished. Document content can contain
+        personal data. No automatic anonymization or encryption is applied.
+      </p>
+    </main>
+    <script src="export.js" type="module"></script>
+  </body>
+</html>

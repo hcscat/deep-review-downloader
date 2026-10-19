@@ -1,0 +1,360 @@
+/* Standalone layout: no saved Google stylesheet or Angular runtime is needed.
+   Only --pat-pdf-width changes on zoom; percentage highlights stay on the image. */
+:root {
+  font-family: "Google Sans", Arial, sans-serif;
+  color: #0b2545;
+  background: #fff;
+  color-scheme: light;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+deepreview-root,
+deepreview-review-viewer,
+.deepreview-layout,
+.deepreview-main {
+  display: block;
+  height: 100%;
+  min-height: 0;
+}
+deepreview-review-viewer {
+  --header-height: 49px;
+}
+.review-viewer-header {
+  height: var(--header-height);
+  padding: 7px 16px;
+  border-bottom: 1px solid #dadce0;
+  background: #fff;
+}
+.review-viewer-header-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.review-viewer-header-title {
+  overflow: hidden;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.review-viewer-header-fill {
+  flex: 1;
+}
+.manuscript-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+button,
+select {
+  font: inherit;
+}
+.mdc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 7px 14px;
+  border: 1px solid #80868b;
+  border-radius: 20px;
+  background: #fff;
+  color: #0655c5;
+  font-size: 13px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.mdc-button:hover {
+  background: #f3f7fd;
+}
+.mdc-button:focus-visible,
+.zoom-step-btn:focus-visible,
+.zoom-reset-btn:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+.mat-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.pdf-zoom-controls {
+  display: inline-flex;
+  align-items: stretch;
+  height: 32px;
+}
+.zoom-step-btn,
+.zoom-reset-btn {
+  padding: 0 9px;
+  border: 1px solid #dadce0;
+  border-radius: 0;
+  background: #fff;
+  color: #0b2545;
+  font-size: 13px;
+}
+.zoom-step-btn:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.zoom-step-btn:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.zoom-reset-btn {
+  margin: 0 -1px;
+  min-width: 48px;
+}
+.review-viewer-page {
+  height: calc(100% - var(--header-height));
+}
+.figma-split-workspace {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+  max-width: 1260px;
+  padding: 0 12px;
+  margin: auto;
+  min-height: 0;
+}
+.figma-manuscript-column {
+  flex: 1 1 672px;
+  max-width: 672px;
+  min-width: 260px;
+  min-height: 0;
+}
+.pdf-manuscript-viewport {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 16px;
+  background: #202124;
+}
+.pdf-pages-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: max-content;
+  min-width: 100%;
+}
+.pdf-page-wrapper {
+  position: relative;
+  flex: none;
+  width: var(--pat-pdf-width, 640px);
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+  background: white;
+}
+.annotated-pdf-page-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.pdf-bbox-highlight {
+  position: absolute;
+  z-index: 1;
+  border-radius: 1px;
+  background: rgb(245 158 11 / 22%);
+  cursor: pointer;
+}
+.pdf-bbox-highlight.severity-critical {
+  background: rgb(239 68 68 / 20%);
+}
+.pdf-bbox-highlight.severity-minor {
+  background: rgb(59 130 246 / 18%);
+}
+.pdf-bbox-highlight.severity-suggestion {
+  background: rgb(168 85 247 / 18%);
+}
+.pdf-bbox-highlight.selected {
+  z-index: 2;
+  background: rgb(245 158 11 / 42%);
+  outline: 1px solid rgb(180 83 9 / 60%);
+}
+.feedback-stream-pane {
+  flex: 0 1 540px;
+  max-width: 540px;
+  min-width: 300px;
+  min-height: 0;
+  overflow: auto;
+  padding: 20px 12px 36px;
+  background: #fff;
+}
+.overall-card-title-row,
+.header-title-row,
+.detailed-feedback-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.overall-card-title-row {
+  padding: 8px 8px 12px;
+}
+.overall-card-heading,
+.detailed-feedback-badge {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.figma-feedback-card {
+  padding: 20px;
+  border: 1px solid #dadce0;
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+}
+.figma-feedback-card.selected {
+  background: #f7f9fc;
+  box-shadow: 0 1px 6px rgb(60 64 67 / 20%);
+}
+.comment-card-header .header-title-row {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.comment-summary {
+  margin: 0 0 12px;
+  color: #102338;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.comment-body {
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.comment-body p {
+  margin: 0 0 10px;
+}
+.comment-body h4 {
+  margin: 12px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.comment-body ul,
+.comment-body ol {
+  margin: 4px 0 10px;
+  padding-left: 20px;
+}
+.comment-body li {
+  margin-bottom: 3px;
+}
+.comment-body a {
+  color: #0655c5;
+  text-decoration: underline;
+}
+.comment-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+.comment-body th,
+.comment-body td {
+  border: 1px solid #dadce0;
+  padding: 6px;
+}
+.comment-body pre {
+  overflow: auto;
+  padding: 10px;
+  background: #f1f3f4;
+}
+.comment-body code {
+  font-size: 0.9em;
+  background: #eef1f6;
+}
+.comment-body math {
+  font-family: "STIXTwoMath-Regular", serif;
+}
+.comment-body blockquote {
+  margin: 12px 0;
+  padding-left: 12px;
+  border-left: 3px solid #dadce0;
+}
+.overall-summary-body.collapsed {
+  position: relative;
+  max-height: 140px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000 65%, transparent);
+}
+.figma-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+.figma-footer-actions {
+  margin-left: auto;
+}
+.figma-card-footer .mdc-button {
+  min-height: 28px;
+  padding: 4px 12px;
+  border-color: #bdc1c6;
+  color: #3c5067;
+  font-size: 12px;
+}
+.figma-card-footer .mat-icon {
+  width: 16px;
+  height: 16px;
+}
+.comment-location-footer {
+  color: #607087;
+  font-size: 12px;
+}
+.detailed-feedback-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 8px;
+}
+.detailed-feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.severity-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.severity-badge.severity-critical {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+.severity-badge.severity-major {
+  color: #92400e;
+  background: #fef3c7;
+}
+.severity-badge.severity-minor {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+.severity-badge.severity-suggestion {
+  color: #7e22ce;
+  background: #f3e8ff;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

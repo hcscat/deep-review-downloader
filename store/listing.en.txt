@@ -1,0 +1,18 @@
+Name
+Deep Review HTML Exporter
+
+Short description
+Save the open Deep Review as one offline HTML file with linked highlights and comments.
+
+Detailed description
+Save the Deep Review document you are reading and revisit it offline.
+
+Open an accessible review, sign in to the original service if needed, and click the extension toolbar button once. The exporter saves page images, overall feedback, detailed comments and linked highlights in one HTML file. A separate task tab reports progress and confirms the completed download.
+
+The saved viewer supports Read More/Less, Report/Comments switching, two-way highlight and comment navigation, 50–500% page zoom, severity filtering, dismissal and restoration, and copying the complete same-review report. Its display resources and interaction code are embedded, so it works without the extension, a login or a network connection after saving.
+
+The selected review's contents and document metadata are processed on your device. The extension does not upload them to developer servers or use them for advertising or analytics. It does not read Google passwords, authentication cookies, tokens or website storage. Names or contact details already present in the selected document may be included as document content.
+
+Page display is image based; PDF text selection, search and vector re-rendering are not provided. Comments already removed from the source DOM may be absent. The current Deep Review PDF review interface is supported; source changes or browser image restrictions can prevent capture and are reported as errors.
+
+This is an independent tool, not an official Google product or an endorsement by Google. Store screenshots show fictional demonstration content exported by the actual extension.

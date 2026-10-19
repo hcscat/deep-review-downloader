@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.woff2 binary
+*.ttf binary
+*.zip binary
+# Preserve upstream license bytes and their original whitespace verbatim.
+viewer/assets/*-OFL.txt -text -whitespace

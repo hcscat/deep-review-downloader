@@ -1,0 +1,38 @@
+[
+  {
+    "file": "google-sans-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/googlesans/v62/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2",
+    "bytes": 55256,
+    "sha256": "351ba345250baf98ce325b4017ac9b96c9498f6644937ef558dc5993af676f2a"
+  },
+  {
+    "file": "google-sans-latin-ext.woff2",
+    "source": "https://fonts.gstatic.com/s/googlesans/v62/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2sACIlsw.woff2",
+    "bytes": 31356,
+    "sha256": "1958b62ee00a48181bfc2b3664f532c34dd38bc7494987835f22f2046bef1b7d"
+  },
+  {
+    "file": "google-sans-greek.woff2",
+    "source": "https://fonts.gstatic.com/s/googlesans/v62/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vQCIlsw.woff2",
+    "bytes": 13132,
+    "sha256": "8fa27db129ddb70d33eafaa6029161d0f439ada502a9dc20eb19899e28138aaa"
+  },
+  {
+    "file": "STIXTwoMath-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/stixtwomath/STIXTwoMath-Regular.ttf",
+    "bytes": 1517976,
+    "sha256": "562551b15b836e6e01d1b7350909baf3c8c8d83260c1190fbf4544333e6936de"
+  },
+  {
+    "file": "STIX-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/stixtwomath/OFL.txt",
+    "bytes": 4519,
+    "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
+  },
+  {
+    "file": "GoogleSans-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/googlesans/OFL.txt",
+    "bytes": 4488,
+    "sha256": "2b75ef20f13d83a7514aee452c4782c20cdc9ff2dee17600f44d37a06d4fb958"
+  }
+]
